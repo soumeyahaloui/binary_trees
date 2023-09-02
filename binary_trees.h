@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 
 /* Data structures */
 
@@ -29,7 +30,8 @@ typedef struct binary_tree_s heap_t;
 
 typedef struct link_s
 {
-    binary_tree_t *node;
+    size_t n;
+    struct binary_tree_s const *node;
     struct link_s *next;
 } link_t;
 
