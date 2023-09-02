@@ -27,6 +27,12 @@ typedef struct binary_tree_s bst_t;
 typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 
+typedef struct link_s
+{
+    binary_tree_t *node;
+    struct link_s *next;
+} link_t;
+
 /**
  * struct levelorder_queue_s - Level order traversal queue.
  * @node: A node of a binary tree.
